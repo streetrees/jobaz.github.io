@@ -241,12 +241,17 @@
 /* ###########
 #### end header */
 
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .table {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
-  height: 100dvh;   
+  height: 100dvh;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -256,16 +261,8 @@
 }
 
 .table th {
-  width: 25%;
-  height: 50%;
   padding: 0;
   overflow: hidden;
-  position: relative
-}
-
-.table, .table th, .table tr {
-  max-height: 100dvh;
-  max-height: 100vh;
 }
 
 .image {

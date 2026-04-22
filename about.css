@@ -99,6 +99,18 @@
 /* ###########
 #### end header */
 
+.body{
+    background-image: url("about/clown1.jpg"); 
+
+}
+
+.textbox{
+    margin-top: 20%;
+    color: white;
+    font-size: 200%;
+
+}
+
 }
 
 

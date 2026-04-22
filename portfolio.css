@@ -167,7 +167,7 @@
 .button1:link,
 .button1:visited {
     width: 35px; 
-  color: white;
+  color: pink;
   cursor: pointer;
   font-size: 90%;
   text-decoration: none; 
@@ -274,9 +274,8 @@ html, body {
 .image {
   width: 100%;
   height: 100%;
-  object-fit: contain;  
-  display: block;
-  background: black;    
+  object-fit: cover;
+  object-position: center 40%;
 }
 
 

@@ -100,15 +100,25 @@
 #### end header */
 
 .body{
+ background-color: azure;
+
+}
+
+.image{
     background-image: url("about/clown1.jpg"); 
 
 }
 
-.textbox{
+.sidetext{
     margin-top: 20%;
-    color: white;
     font-size: 200%;
+    width:40%;
+    background-color: black;
+    right:0
+}
 
+.textbox{
+    color: white;
 }
 
 }

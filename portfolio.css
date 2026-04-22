@@ -167,7 +167,7 @@
 .button1:link,
 .button1:visited {
     width: 35px; 
-  color: white;
+  color: yellow;
   cursor: pointer;
   font-size: 90%;
   text-decoration: none; 
@@ -256,7 +256,7 @@ html, body {
   width: 100vw;
   height: 100dvh;
   table-layout: fixed;
-  border-collapse: collapse;
+  border-collapse:collapse;
 }
 
 .table tr {
@@ -264,13 +264,16 @@ html, body {
 }
 
 .table th {
+  width: 25%;       /* 4 columns */
+  height: 50%;      /* 2 rows */
   padding: 0;
+  margin: 0;
   overflow: hidden;
 }
 
 .image {
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }

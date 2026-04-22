@@ -221,15 +221,15 @@ body {
         font-size:100%;
         border-spacing: 5px;
         position:fixed;
-        width: 30%;
         right:0;
-        top: 3%;
-        margin-right: 2.5%;
+        margin-right: 2%;
+        top: 3%
     }
 
 .button1,
 .button1:link,
 .button1:visited {
+    width: 35px; 
   color: white;
   cursor: pointer;
   font-size: 90%;

@@ -158,13 +158,14 @@
         border-spacing: 5px;
         position:fixed;
         right:0;
+        margin-right: 2%;
         top: 3%
     }
 
 .button1,
 .button1:link,
 .button1:visited {
-    width: 55px; 
+    width: 35px; 
   color: white;
   cursor: pointer;
   font-size: 90%;
@@ -259,6 +260,11 @@
   padding: 0;
   overflow: hidden;
   position: relative
+}
+
+.table, .table th, .table tr {
+  max-height: 100dvh;
+  max-height: 100vh;
 }
 
 .image {

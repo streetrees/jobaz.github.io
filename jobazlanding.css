@@ -77,15 +77,16 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
         font-size:100%;
         border-spacing: 5px;
         position:fixed;
+        right: 0;
         width: 30%;
-        right:0;
         top: 10%;
-        margin-right: 2%;
+        margin-right: 3%;
     }
 
 .button1,
 .button1:link,
 .button1:visited {
+  width: 120px; 
   color: white;
   cursor: pointer;
   font-size: 100%;

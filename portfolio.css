@@ -31,7 +31,7 @@
 .button1:link,
 .button1:visited {
   width: 120px; 
-  color: white;
+  color: #333;
   cursor: pointer;
   font-size: 100%;
   text-decoration: none; 
@@ -40,7 +40,7 @@
 
 .button1:hover,
 .button1:active {
-  color: #333; 
+  color: grey; 
 }
 
 .titlebutton {
@@ -100,7 +100,9 @@
 #### end header */
 
 html, body {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 4%;
   height: 100%;
 }
 
@@ -189,7 +191,7 @@ html, body {
 .button1:link,
 .button1:visited {
     width: 35px; 
-  color: white;
+  color: #333;
   cursor: pointer;
   font-size: 90%;
   text-decoration: none; 
@@ -198,7 +200,7 @@ html, body {
 
 .button1:hover,
 .button1:active {
-  color: #333; 
+  color: grey; 
 }
 
      .titleblock {
@@ -264,7 +266,9 @@ html, body {
 #### end header */
 
 html, body {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 7.9%;
   height: 100%;
 }
 
@@ -275,7 +279,7 @@ html, body {
   grid-template-rows: repeat(2, 1fr);
 
   width: 100vw;
-  height: 100vh;
+  height: 92vh;
 }
 
 .grid img {

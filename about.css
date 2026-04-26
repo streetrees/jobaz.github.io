@@ -133,7 +133,7 @@ html, body {
 /* FLOATING TEXT PANEL */
 .textbox {
   position: absolute;
-  margin-left: 5%;
+  left: 5%;
   top: 23%;
   width: 60%;
   max-height: 80vh;
@@ -152,6 +152,89 @@ html, body {
   /* margin-top: 5%; */
   font-size: 150%;
   color:white
+}
+
+/* FLOATING TEXT PANEL */
+.textbox2 {
+  position: absolute;
+  right: 5%;
+  top: 28%;
+  width: 25%;
+  max-height: 80vh;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2;
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sidetext2 {
+  /* margin-top: 5%; */
+  font-size: 100%;
+  color:white;
+  letter-spacing: 2px;
+}
+
+/* FLOATING TEXT PANEL */
+.textbox3 {
+  position: absolute;
+  right: 5%;
+  top: 48%;
+  width: 25%;
+  max-height: 80vh;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2;
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sidetext3 {
+  /* margin-top: 5%; */
+  font-size: 100%;
+  color:white;
+  letter-spacing: 2px;
+}
+
+/* FLOATING TEXT PANEL */
+.textbox4 {
+  position: absolute;
+  right: 5%;
+  top: 63%;
+  width: 25%;
+  max-height: 80vh;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2;
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sidetext4 {
+  /* margin-top: 5%; */
+  font-size: 100%;
+  color:white;
+  letter-spacing: 2px;
+}
+
+.textbox_m {
+display:block
+}
+
+.sidetext_m {
+display:block
 }
 
 .container {
@@ -318,11 +401,11 @@ html, body {
 
 .textbox {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;         
-  max-height: 60vh;
+  max-height: 50vh;
   padding: 20px;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.6);
@@ -337,6 +420,30 @@ html, body {
 .sidetext {
   font-size: 100%;
   color:white
+}
+
+.textbox_m {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;         
+  max-height: 20vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sidetext_m {
+  font-size: 80%;
+  color:white;
+  letter-spacing: 2px;
 }
 
 .container {

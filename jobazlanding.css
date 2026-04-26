@@ -96,7 +96,7 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
 
 .button1:hover,
 .button1:active {
-  color: black; 
+  color: #333; 
 }
 
      .titleblock {
@@ -141,21 +141,35 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
   left: -240px;
 }
 
-     .centertext{
-        color:white;
-        font-size: 300%;
-        top: 45%;
-        left: 20%;
-        position: absolute;
-     }
+html, body {
+  margin: 0;
+  height: 100%;
+}
 
-          .smallcenter{
-        color:white;
-        font-size: 145%;
-        top: 54%;
-        left: 20%;
-        position: absolute;
-     }
+/* centers everything in the page */
+.centerwrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70vw;
+}
+
+/* big title */
+.centertext {
+  color: white;
+  font-size: 380%;
+  margin: 0;
+}
+
+/* subtitle directly under it */
+.smallcenter {
+  color: white;
+  font-size: 150%;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
 
 }
 
@@ -240,7 +254,7 @@ body {
 
 .button1:hover,
 .button1:active {
-  color: black; 
+  color: #333; 
 }
 
      .titleblock {
@@ -285,24 +299,29 @@ body {
   left: -40px;
 }
 
-     .centertext{
-        color:white;
-        font-size: 200%;
-        top: 35%;
-        left: 8%;
-        right:8%;
-        position: absolute;
-     }
+.centerwrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90vw;
+}
 
-          .smallcenter{
-        color:white;
-        font-size: 110%;
-        top: 50%;
-        left: 8%;
-        right:8%;
-        position: absolute;
-     }
+/* big title */
+.centertext {
+  color: white;
+  font-size: 200%;
+  margin: 0;
+}
 
+/* subtitle directly under it */
+.smallcenter {
+  color: white;
+  font-size: 90%;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
 }
 
  @font-face  {

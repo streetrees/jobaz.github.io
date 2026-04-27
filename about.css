@@ -36,7 +36,7 @@
 .button1:link,
 .button1:visited {
   width: 120px; 
-  color: white;
+  color: #333;
   cursor: pointer;
   font-size: 100%;
   text-decoration: none; 
@@ -46,7 +46,7 @@
 
 .button1:hover,
 .button1:active {
-  color: #333;
+  color: grey;
 }
 
 .titlebutton {
@@ -110,13 +110,20 @@ html, body {
   overflow: hidden;
 }
 
-/* FULLSCREEN SLIDESHOW BACKGROUND */
-.slideshow {
+.imgbox {
   position: fixed;
-  inset: 0; /* top:0 right:0 bottom:0 left:0 */
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
+  left: 3%;
+  top: 25%;
+  width: 50vw;
+  height: 65vh; 
+  overflow: hidden;
+}
+
+
+.slideshow {
+  position: relative;  /* NOT fixed */
+  width: 100%;
+  height: 100%;
 }
 
 /* SLIDES */
@@ -134,25 +141,24 @@ html, body {
 /* FLOATING TEXT PANEL */
 .textbox {
   position: absolute;
-  left: 5%;
-  top: 23%;
-  width: 60%;
+  right: 5%;
+  top: 150%;
+  width: 40%;
   max-height: 80vh;
   padding: 40px;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.6); 
-  color: white;
+  background: white;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 2;
-  backdrop-filter: blur(10px); /* glass effect */
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); */
 }
 
 .sidetext {
   /* margin-top: 5%; */
-  font-size: 150%;
-  color:white
+  font-size: 120%;
+  color:black
 }
 
 /* FLOATING TEXT PANEL */
@@ -298,7 +304,7 @@ display:block
 .button1:link,
 .button1:visited {
     width: 35px; 
-  color: white;
+  color: #333;
   cursor: pointer;
   font-size: 90%;
   text-decoration: none; 
@@ -308,7 +314,7 @@ display:block
 
 .button1:hover,
 .button1:active {
-  color: #333; 
+  color: grey; 
 }
 
      .titleblock {
@@ -372,21 +378,30 @@ display:block
 
 /* ####################################3
 ### end header */
-
-
 html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
 }
 
-/* FULLSCREEN SLIDESHOW BACKGROUND */
-.slideshow {
+.imgbox {
   position: fixed;
-  inset: 0; /* top:0 right:0 bottom:0 left:0 */
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
+  top: 10%;
+
+  left: 50%;
+  transform: translateX(-50%); 
+
+  width: 94vw;  
+  height: 45vh;
+
+  overflow: hidden;
+}
+
+
+.slideshow {
+  position: relative;  /* NOT fixed */
+  width: 100%;
+  height: 100%;
 }
 
 /* SLIDES */
@@ -403,28 +418,33 @@ html, body {
 
 .textbox {
   position: absolute;
-  top: 15%;
+
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;         
-  max-height: 50vh;
+
+  top: calc(55vh); 
+
+  width: 94vw;  
+  max-height: 40vh;
+
   padding: 20px;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+
+  background: white;
+
   overflow-y: auto;
   overflow-x: hidden;
+
   z-index: 2;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .sidetext {
+  /* margin-top: 5%; */
   font-size: 100%;
-  color:white
+  color:black
 }
 
-.textbox_m {
+/* .textbox_m {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -446,7 +466,7 @@ html, body {
   font-size: 80%;
   color:white;
   letter-spacing: 2px;
-}
+} */
 
 .container {
   display: grid;

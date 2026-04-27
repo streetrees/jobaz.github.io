@@ -233,14 +233,14 @@ body {
     background-color: rgba(240, 255, 255, 0.4);
 }
 
-    .topmenu{
-        font-size:100%;
-        border-spacing: 5px;
-        position:fixed;
-        right:0;
-        margin-right: 2%;
-        top: 3%
-    }
+.topmenu {
+  font-size: 100%;
+  position: fixed;
+  right: 0;
+  top: 5%;
+  margin-right: 2%;
+  border-spacing: 15px 0;      
+}
 
 .button1,
 .button1:link,

@@ -73,6 +73,10 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
     background-color: rgba(240, 255, 255, 0.4);
 }
 
+.pink{
+  color:hotpink
+}
+
     .topmenu{
         font-size:100%;
         border-spacing: 5px;
@@ -87,7 +91,7 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
 .button1:link,
 .button1:visited {
   width: 120px; 
-  color: white;
+  color: #333;
   cursor: pointer;
   font-size: 100%;
   text-decoration: none; 
@@ -97,7 +101,7 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
 
 .button1:hover,
 .button1:active {
-  color: #333; 
+  color: grey; 
 }
 
      .titleblock {
@@ -160,7 +164,7 @@ html, body {
 /* big title */
 .centertext {
   color: white;
-  font-size: 380%;
+  font-size: 360%;
   margin: 0;
 }
 
@@ -233,6 +237,10 @@ body {
     background-color: rgba(240, 255, 255, 0.4);
 }
 
+.pink{
+  color:hotpink
+}
+
 .topmenu {
   font-size: 100%;
   position: fixed;
@@ -246,7 +254,7 @@ body {
 .button1:link,
 .button1:visited {
     width: 35px; 
-  color: white;
+  color: #333;
   cursor: pointer;
   font-size: 90%;
   text-decoration: none; 

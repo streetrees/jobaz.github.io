@@ -9,10 +9,9 @@
     </head>
     <header class="header">
 <div class="titleblock">
-      <img src="shine.webp" class="bg-image">
 <a href="index.html" target="_self" class="titlebutton">
 <div class="maintitle">
-JOBAZ
+  J<span class="pink">O</span>BAZ
         </div>
         <div class="mainunder">
 Makeup
@@ -40,71 +39,144 @@ Makeup
 </table>
 </header>
     <body class="body">
-          <div id="lightbox">
-            <div class="lightbox-content">
+<div id="lightbox">
+  <div class="lightbox-wrapper">
+    <span id="lightbox-prev">&#10094;</span>
+
     <img id="lightbox-img">
-    <div id="lightbox-caption"></div>
-  </div>
+
+    <span id="lightbox-next">&#10095;</span>
+
+  <div id="lightbox-caption"></div>
 </div>
+</div>
+
 <div class="grid">
   <div class="item">
     <img src="portfolio/1.jpg">
-    <div class="caption">Romantic Jester
-        <br>Model: Hunter Storm
+    <div class="caption">
+        Model: Hunter Storm
         <br>Photographer: Pascal Schmidt
     </div>
   </div>
 
   <div class="item">
     <img src="portfolio/11.jpg">
-    <div class="caption">In My Bedroom 
-        <br>Model: Ishta Nabakka 
+    <div class="caption"> 
+        Model: Ishta Nabakka 
         <br>Photographer: Josephine Bazambanza</div>
   </div>
 
   <div class="item">
     <img src="portfolio/3.jpg">
-    <div class="caption">Beetle
-        <br>Model: Joana Elisee
+    <div class="caption">
+        Model: Joana Elisee
         <br>Photographer: Ed Mehravaran</div>
   </div>
 
   <div class="item">
     <img src="portfolio/4.jpg">
-    <div class="caption">Red Ant
-        <br>Model: Olivia Luft
+    <div class="caption">
+        Model: Olivia Luft
         <br>Photographer: Ed Mehravaran</div>
   </div>
 
   <div class="item">
     <img src="portfolio/5.jpg">
-    <div class="caption">Pig 
-        <br>Model: Merle Dornfeldt
+    <div class="caption">
+        Model: Merle Dornfeldt
         <br>Photographer: Ed Mehravaran</div>
   </div>
 
   <div class="item">
     <img src="portfolio/6.jpg">
-    <div class="caption">Tanzanite
-        <br>Model: Lara Sophie Block
+    <div class="caption">
+        Model: Lara Sophie Block
         <br>Photographer: Ed Mehravaran</div>
   </div>
 
   <div class="item">
     <img src="portfolio/7.jpg">
-    <div class="caption">Clowning 
-        <br>Model: Emir García
+    <div class="caption">
+        Model: Emir García
         <br>Photographer: Pascal Schmidt</div>
   </div>
 
   <div class="item">
     <img src="portfolio/2.jpg">
-    <div class="caption">Moth
-        <br>Model: Malin Freidrich
+    <div class="caption">
+        Model: Malin Freidrich
         <br>Photographer: Ed Mehravaran</div>
   </div>
 </div>
 <script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  const images = document.querySelectorAll('.item img');
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+
+  const prevBtn = document.getElementById('lightbox-prev');
+  const nextBtn = document.getElementById('lightbox-next');
+
+  let currentIndex = 0;
+
+  function openLightbox() {
+    const img = images[currentIndex];
+
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+
+    const caption = img.parentElement.querySelector('.caption');
+    lightboxCaption.innerHTML = caption ? caption.innerHTML : '';
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    openLightbox();
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    openLightbox();
+  }
+
+  // open from grid
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      openLightbox();
+    });
+  });
+
+  // arrows
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    nextImage();
+  });
+
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    prevImage();
+  });
+
+  // CLICK IMAGE → CLOSE
+  lightboxImg.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // optional: click background also closes
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+
+});
+</script>
+<!-- <script>
   const images = document.querySelectorAll('.item img');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
@@ -124,7 +196,7 @@ Makeup
   lightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
   });
-</script>
+</script> -->
     </body>
 </html>
  

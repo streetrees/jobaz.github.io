@@ -32,29 +32,99 @@ Makeup
             </a>
         </th>
         <th class="button1" > 
-            <a href="bookings.html" target="_self" class="button1">
-           Bookings
+            <a href="contact.html" target="_self" class="button1">
+           Contact
            </a>
         </th>
-        <th class="button1" > 
-            <a href="workshop.html" target="_self" class="button1">
-            Workshop
-            </a>
-         </th>
     </tr>
 </table>
 </header>
     <body class="body">
-<div class="grid">
-  <img src="portfolio/1.jpg">
-  <img src="portfolio/11.jpg">
-  <img src="portfolio/3.jpg">
-  <img src="portfolio/4.jpg">
-  <img src="portfolio/5.jpg">
-  <img src="portfolio/6.jpg">
-  <img src="portfolio/7.jpg">
-  <img src="portfolio/2.jpg">
+          <div id="lightbox">
+            <div class="lightbox-content">
+    <img id="lightbox-img">
+    <div id="lightbox-caption"></div>
+  </div>
 </div>
+<div class="grid">
+  <div class="item">
+    <img src="portfolio/1.jpg">
+    <div class="caption">Romantic Jester
+        <br>Model: Hunter Storm
+        <br>Photographer: Pascal Schmidt
+    </div>
+  </div>
 
+  <div class="item">
+    <img src="portfolio/11.jpg">
+    <div class="caption">In My Bedroom 
+        <br>Model: Ishta Nabakka 
+        <br>Photographer: Josephine Bazambanza</div>
+  </div>
+
+  <div class="item">
+    <img src="portfolio/3.jpg">
+    <div class="caption">Beetle
+        <br>Model: Joana Elisee
+        <br>Photographer: Ed Mehravaran</div>
+  </div>
+
+  <div class="item">
+    <img src="portfolio/4.jpg">
+    <div class="caption">Red Ant
+        <br>Model: Olivia Luft
+        <br>Photographer: Ed Mehravaran</div>
+  </div>
+
+  <div class="item">
+    <img src="portfolio/5.jpg">
+    <div class="caption">Pig 
+        <br>Model: Merle Dornfeldt
+        <br>Photographer: Ed Mehravaran</div>
+  </div>
+
+  <div class="item">
+    <img src="portfolio/6.jpg">
+    <div class="caption">Tanzanite
+        <br>Model: Lara Sophie Block
+        <br>Photographer: Ed Mehravaran</div>
+  </div>
+
+  <div class="item">
+    <img src="portfolio/7.jpg">
+    <div class="caption">Clowning 
+        <br>Model: Emir García
+        <br>Photographer: Pascal Schmidt</div>
+  </div>
+
+  <div class="item">
+    <img src="portfolio/2.jpg">
+    <div class="caption">Moth
+        <br>Model: Malin Freidrich
+        <br>Photographer: Ed Mehravaran</div>
+  </div>
+</div>
+<script>
+  const images = document.querySelectorAll('.item img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+
+      // 👇 grab caption from the same item
+      const caption = img.parentElement.querySelector('.caption');
+      lightboxCaption.innerHTML = caption.innerHTML;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
     </body>
 </html>
+ 

@@ -165,12 +165,6 @@
   color: grey; 
 }
 
-     .titleblock {
-  margin-left: 4.5%;
-  margin-top: 1.1%;
-  display: inline-block;
-  z-index: 0;   
-}
 
 .titlebutton {
   display: inline-block;   /* makes it act like one unit */
@@ -185,7 +179,7 @@
 }
 
      .titleblock {
-  margin-left: 2%;
+  margin-left: 5%;
   margin-top: 1.1%;
   display: inline-block;
   z-index: 0;   

@@ -41,16 +41,16 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
   background-position: center;
 
   opacity: 0;
-  animation: fade 18s infinite;
+  animation: fade 30s infinite;
 }
 
 /* images */
 .img1 { background-image: url("scroll/1.jpg"); animation-delay: 0s; }
-.img2 { background-image: url("scroll/saph1.jpg"); animation-delay: 3s; }
-.img3 { background-image: url("scroll/clown1.jpg"); animation-delay: 6s; }
-.img4 { background-image: url("scroll/bts.jpg"); animation-delay: 9s; }
-.img5 { background-image: url("scroll/clown.jpg"); animation-delay: 12s; }
-.img6 { background-image: url("scroll/ant1.jpg"); animation-delay: 15s; }
+.img2 { background-image: url("scroll/saph1.jpg"); animation-delay: 5s; }
+.img3 { background-image: url("scroll/clown1.jpg"); animation-delay: 10s; }
+.img4 { background-image: url("scroll/bts.jpg"); animation-delay: 15s; }
+.img5 { background-image: url("scroll/clown.jpg"); animation-delay: 20s; }
+.img6 { background-image: url("scroll/ant1.jpg"); animation-delay: 25s; }
 
 @keyframes fade {
   0%   { opacity: 0; }
@@ -205,16 +205,16 @@ body {
   background-position: center;
 
   opacity: 0;
-  animation: fade 18s infinite;
+  animation: fade 30s infinite;
 }
 
 /* images */
-.img1 { background-image: url("scroll/3.JPG"); animation-delay: 0s; }
-.img2 { background-image: url("scroll/saph1.jpg"); animation-delay: 3s; }
-.img3 { background-image: url("scroll/clown1.jpg"); animation-delay: 6s; }
-.img4 { background-image: url("scroll/bts.jpg"); animation-delay: 9s; }
-.img5 { background-image: url("scroll/clown.jpg"); animation-delay: 12s; }
-.img6 { background-image: url("scroll/ant1.jpg"); animation-delay: 15s; }
+.img1 { background-image: url("scroll/1.jpg"); animation-delay: 0s; }
+.img2 { background-image: url("scroll/saph1.jpg"); animation-delay: 5s; }
+.img3 { background-image: url("scroll/clown1.jpg"); animation-delay: 10s; }
+.img4 { background-image: url("scroll/bts.jpg"); animation-delay: 15s; }
+.img5 { background-image: url("scroll/clown.jpg"); animation-delay: 20s; }
+.img6 { background-image: url("scroll/ant1.jpg"); animation-delay: 25s; }
 
 @keyframes fade {
   0%   { opacity: 0; }

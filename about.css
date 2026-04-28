@@ -200,13 +200,13 @@ html, body {
 }
 
 
-.img1 { background-image: url("about/a7.jpg"); animation-delay: 0s; }
-.img2 { background-image: url("about/a1.jpg"); animation-delay: 10s; }
-.img3 { background-image: url("about/a2.jpg"); animation-delay: 20s; }
-.img4 { background-image: url("about/a3.jpg"); animation-delay: 30s; }
-.img5 { background-image: url("about/a4.jpg"); animation-delay: 40s; }
-.img6 { background-image: url("about/a5.jpg"); animation-delay: 50s; }
-.img7 { background-image: url("about/a6.jpg"); animation-delay: 60s; }
+.img1 { background-image: url("about/a7.webp"); animation-delay: 0s; }
+.img2 { background-image: url("about/a8.webp"); animation-delay: 10s; }
+.img3 { background-image: url("about/a3.webp"); animation-delay: 20s; }
+.img4 { background-image: url("about/a2.webp"); animation-delay: 30s; }
+.img5 { background-image: url("about/a4.webp"); animation-delay: 40s; }
+.img6 { background-image: url("about/a5.webp"); animation-delay: 50s; }
+.img7 { background-image: url("about/a6.webp"); animation-delay: 60s; }
 
 @keyframes fade {
   0%   { opacity: 0; }
@@ -428,13 +428,13 @@ html, body {
   height: 100vh;
 }
 
-.img1 { background-image: url("about/a7.jpg"); animation-delay: 0s; }
-.img2 { background-image: url("about/a1.jpg"); animation-delay: 10s; }
-.img3 { background-image: url("about/a2.jpg"); animation-delay: 20s; }
-.img4 { background-image: url("about/a3.jpg"); animation-delay: 30s; }
-.img5 { background-image: url("about/a4.jpg"); animation-delay: 40s; }
-.img6 { background-image: url("about/a5.jpg"); animation-delay: 50s; }
-.img7 { background-image: url("about/a6.jpg"); animation-delay: 60s; }
+.img1 { background-image: url("about/a7.webp"); animation-delay: 0s; }
+.img2 { background-image: url("about/a8.webp"); animation-delay: 10s; }
+.img3 { background-image: url("about/a3.webp"); animation-delay: 20s; }
+.img4 { background-image: url("about/a2.webp"); animation-delay: 30s; }
+.img5 { background-image: url("about/a4.webp"); animation-delay: 40s; }
+.img6 { background-image: url("about/a5.webp"); animation-delay: 50s; }
+.img7 { background-image: url("about/a6.webp"); animation-delay: 60s; }
 
 @keyframes fade {
   0%   { opacity: 0; }

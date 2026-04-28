@@ -149,7 +149,6 @@ body {
   justify-content: flex-start; 
 
   padding: 15px; 
-
   opacity: 0;
   transition: opacity 0.3s ease;
 }

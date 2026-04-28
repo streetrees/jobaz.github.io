@@ -11,7 +11,7 @@ body {
 .intro {
   position: fixed;
   inset: 0;
-  background-image: url("scroll/ant1.jpg");
+  background-image: url("scroll/ant1.webp");
   background-size: cover;
   background-position: center;
   z-index: 100;
@@ -45,12 +45,12 @@ animation: fadeOutIntro 3.5s ease-in-out forwards;
 }
 
 /* images */
-.img1 { background-image: url("scroll/1.jpg"); animation-delay: 0s; }
-.img2 { background-image: url("scroll/saph1.jpg"); animation-delay: 5s; }
-.img3 { background-image: url("scroll/clown1.jpg"); animation-delay: 10s; }
-.img4 { background-image: url("scroll/bts.jpg"); animation-delay: 15s; }
-.img5 { background-image: url("scroll/clown.jpg"); animation-delay: 20s; }
-.img6 { background-image: url("scroll/ant1.jpg"); animation-delay: 25s; }
+.img1 { background-image: url("scroll/1.webp"); animation-delay: 0s; }
+.img2 { background-image: url("scroll/saph1.webp"); animation-delay: 5s; }
+.img3 { background-image: url("scroll/clown1.webp"); animation-delay: 10s; }
+.img4 { background-image: url("scroll/bts.webp"); animation-delay: 15s; }
+.img5 { background-image: url("scroll/clown.webp"); animation-delay: 20s; }
+.img6 { background-image: url("scroll/ant1.webp"); animation-delay: 25s; }
 
 @keyframes fade {
   0%   { opacity: 0; }
@@ -209,12 +209,12 @@ body {
 }
 
 /* images */
-.img1 { background-image: url("scroll/3.JPG"); animation-delay: 0s; }
-.img2 { background-image: url("scroll/saph1.jpg"); animation-delay: 5s; }
-.img3 { background-image: url("scroll/clown1.jpg"); animation-delay: 10s; }
-.img4 { background-image: url("scroll/bts.jpg"); animation-delay: 15s; }
-.img5 { background-image: url("scroll/clown.jpg"); animation-delay: 20s; }
-.img6 { background-image: url("scroll/ant1.jpg"); animation-delay: 25s; }
+.img1 { background-image: url("scroll/3.webp"); animation-delay: 0s; }
+.img2 { background-image: url("scroll/saph1.webp"); animation-delay: 5s; }
+.img3 { background-image: url("scroll/clown1.webp"); animation-delay: 10s; }
+.img4 { background-image: url("scroll/bts.webp"); animation-delay: 15s; }
+.img5 { background-image: url("scroll/clown.webp"); animation-delay: 20s; }
+.img6 { background-image: url("scroll/ant1.webp"); animation-delay: 25s; }
 
 @keyframes fade {
   0%   { opacity: 0; }

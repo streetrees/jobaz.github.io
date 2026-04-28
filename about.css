@@ -400,24 +400,18 @@ html, body {
 
 .textbox {
   position: absolute;
-
   left: 50%;
   transform: translateX(-50%);
-
   top: calc(55vh); 
-
   width: 94vw;  
   max-height: 40vh;
-
   padding: 20px;
   box-sizing: border-box;
-
   background: white;
-
   overflow-y: auto;
   overflow-x: hidden;
-
   z-index: 2;
+  -webkit-overflow-scrolling: touch;
 }
 
 .sidetext {
